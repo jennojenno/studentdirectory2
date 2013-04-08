@@ -1,0 +1,21 @@
+
+<p>Welcome to the Student Directory</P>
+
+	<p>Choose Instructor or Student below 
+</p>
+
+<a href="/instructor.erb">Instructor link</a> / 
+<a href="/student.erb">Student link</a>
+
+
+<p>
+<% Person.each do |person| %>
+
+<%= person.id %> | 
+<%= person.type %> | 
+<%= person.name %> | 
+<%= person.email %>
+<BR>
+
+
+<% end %> 
